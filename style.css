@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(245, 237, 243);
+}
+
+h1 {
+  font-size: 5rem;
+  color: hsla(300, 16%, 43%, 0.587);
+  letter-spacing: 1.3rem;
+  margin-bottom: 0.9rem;
+}
+
+form input {
+  border: 1px solid hsl(0, 3%, 79%);
+  width: 100%;
+  outline: none;
+  padding: 0.8rem 1rem;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 50%);
+}
+
+input:focus {
+  border-color: hsla(300, 21%, 32%, 0.682);
+  /* box-shadow: 1px 2px rgba(163, 48, 151, 0.243); */
+}
+
+.Addtodo-container {
+  position: relative;
+}
+
+.todo {
+  /* position: absolute; */
+  width: 100%;
+  padding: 0.6rem 0.3rem;
+  border-bottom: 1px solid rgb(200, 198, 198);
+  background-color: white;
+  position: relative;
+  color: rgba(93, 91, 91, 0.746);
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
